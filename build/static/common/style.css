@@ -1,0 +1,40 @@
+/* ヘッダーのスタイル */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-item img {
+    max-height: 40px;
+}
+
+.navbar-item {
+    color: #fff;
+}
+
+.navbar-burger {
+    color: #fff;
+}
+
+/* フッターのスタイル */
+footer {
+    background-color: #f8f8f8;
+    padding: 20px;
+}
+
+/* コンテンツのスタイル */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.content {
+    margin-top: 20px;
+    text-align: center;
+}

@@ -1,6 +1,5 @@
-from flask import Flask, render_template, request, make_response, jsonify
+from flask import Flask, render_template, request, jsonify, Blueprint
 from flask_cors import CORS
-from dotenv import load_dotenv
 
 import os
 import sys
@@ -11,10 +10,10 @@ from settings import DSN, USN, PWD
 app = Flask(__name__, static_folder="./build/static", template_folder="./build/templates/")
 CORS(app)
 
-
 @app.route("/", methods=["GET"])
 def index():
     return render_template("index.html")
+
 
 if __name__ == "__main__":
     app.debug = True

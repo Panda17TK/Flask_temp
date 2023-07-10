@@ -1,14 +1,20 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-    <link rel="stylesheet" href="../static/index/style.css">
-</head>
-<body>
-    <h1>Hello World</h1>
-    <p>Hello World</p>
+{% extends 'layout.html' %}
 
-    <script src="../static/index/page.js"></script>
-</body>
-</html>
+{% block title %}
+サンプルタイトル
+{% endblock  %}
+
+{% block css %}
+    <link rel="stylesheet" href="/static/index/style.css" />
+{% endblock  %}
+
+
+{% block content %}
+コンテンツ
+{% endblock  %}
+
+{% block js %}
+    <script>
+        console.log("This is my custom JavaScript code for this page.");
+    </script>
+{% endblock %}
